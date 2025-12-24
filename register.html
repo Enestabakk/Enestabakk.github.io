@@ -1,93 +1,144 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kayıt Ol | Enestabakk</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-background: linear-gradient(135deg, #1e1e2f, #2b2b45);
-color: #fff;
-}
-.register-card {
-width: 100%;
-max-width: 420px;
-background: #1f2033;
-border-radius: 20px;
-padding: 35px 30px;
-box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-.register-card h1 {
-text-align: center;
-margin-bottom: 10px;
-}
-.register-card p {
-text-align: center;
-font-size: 14px;
-color: #bdbdf0;
-margin-bottom: 25px;
-}
-.form-group {
-margin-bottom: 15px;
-}
-.form-group label {
-display: block;
-font-size: 13px;
-margin-bottom: 6px;
-color: #cfcfff;
-}
-.form-group input {
-width: 100%;
-padding: 12px 14px;
-border-radius: 12px;
-border: none;
-outline: none;
-background: #2b2c45;
-color: #fff;
-font-size: 14px;
-}
-.form-group input::placeholder {
-color: #9a9acb;
-}
-.form-group input:focus {
-outline: 2px solid #6c63ff;
-}
-.terms {
-display: flex;
-align-items: center;
-font-size: 12px;
-margin: 15px 0 20px;
-color: #cfcfff;
-}
-.terms input {
-margin-right: 8px;
-}
-.btn {
-width: 100%;
-padding: 12px;
-border-radius: 14px;
-border: none;
-font-size: 15px;
-font-weight: 600;
-cursor: pointer;
-background: #6c63ff;
-color: #fff;
-transition: 0.3s;
-}
-.btn:hover {
-background: #584ff0;
-}
-.login-link {
-text-align: center;
-margin-top: 18px;
-font-size: 13px;
-}
-.login-link a {
-color: #6c63ff;
-text-decoration: none;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayıt Ol | Enestabakk</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+      color: #fff;
+    }
+    .register-card {
+      width: 100%;
+      max-width: 420px;
+      background: #1f2033;
+      border-radius: 20px;
+      padding: 35px 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .register-card h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .register-card p {
+      text-align: center;
+      font-size: 14px;
+      color: #bdbdf0;
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #cfcfff;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      background: #2b2c45;
+      color: #fff;
+      font-size: 14px;
+    }
+    .form-group input::placeholder {
+      color: #9a9acb;
+    }
+    .form-group input:focus {
+      outline: 2px solid #6c63ff;
+    }
+    .terms {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      margin: 15px 0 20px;
+      color: #cfcfff;
+    }
+    .terms input {
+      margin-right: 8px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: none;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #6c63ff;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #584ff0;
+    }
+    .login-link {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 13px;
+    }
+    .login-link a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-card">
+    <h1>Kayıt Ol</h1>
+    <p>Yeni bir hesap oluştur</p>
+
+    <form>
+      <div class="form-group">
+        <label>Ad Soyad</label>
+        <input type="text" placeholder="Adınız Soyadınız" required />
+      </div>
+
+      <div class="form-group">
+        <label>E-posta</label>
+        <input type="email" placeholder="ornek@mail.com" required />
+      </div>
+
+      <div class="form-group">
+        <label>Kullanıcı Adı</label>
+        <input type="text" placeholder="kullaniciadi" required />
+      </div>
+
+      <div class="form-group">
+        <label>Şifre</label>
+        <input type="password" placeholder="••••••••" required />
+      </div>
+
+      <div class="form-group">
+        <label>Şifre (Tekrar)</label>
+        <input type="password" placeholder="••••••••" required />
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" required />
+        <span>Kullanım şartlarını kabul ediyorum</span>
+      </div>
+
+      <button type="submit" class="btn">Hesap Oluştur</button>
+    </form>
+
+    <div class="login-link">
+      Zaten hesabın var mı? <a href="#">Giriş Yap</a>
+    </div>
+  </div>
+</body>
+</html>
