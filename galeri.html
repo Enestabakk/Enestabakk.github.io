@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aber Hairstudios | Galeri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #080130; color: white; font-family: 'Arial', sans-serif; }
+        /* Resim kutusu ayarları */
+        .gallery-item { 
+            overflow: hidden; 
+            border-radius: 12px; 
+            position: relative; 
+            height: 380px; 
+            background-color: #0d044a; /* Resim gelmezse boş kalmasın */
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        /* Resimlerin yamulmasını engelleyen ve kutuyu dolduran ayar */
+        .gallery-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: all 0.6s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.1); filter: brightness(0.7); }
+        /* Üzerine gelince çıkan yazı */
+        .overlay { 
+            position: absolute; inset: 0; 
+            display: flex; flex-direction: column; justify-content: flex-end;
+            padding: 20px; background: linear-gradient(to top, rgba(8,1,48,0.8), transparent);
+            opacity: 0; transition: 0.3s;
+        }
+        .gallery-item:hover .overlay { opacity: 1; }
+    </style>
+</head>
+<body class="min-h-screen p-8">
+
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-10">
+      <a href="index.html" class="text-xs opacity-50 hover:opacity-100 transition underline underline-offset-4">← ANA SAYFAYA DÖN</a>
+      <h1 class="text-4xl font-bold uppercase tracking-tighter mt-4">Aber Galeri</h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="gallery-item">
+        <img src="ambians.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Aber Stüdyo</p></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="cocuk.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Detaylı Kesim</p></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="fön.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Sakal Sanatı</p></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sac.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Klasik Stil</p></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sac2.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Profesyonel Bakım</p></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sakal.jpg">
+        <div class="overlay"><p class="font-bold text-xl">Genç Tasarımlar</p></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aber Hairstudios</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-color: #080130;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(8, 1, 48, 0.8), rgba(8, 1, 48, 0.8)), 
+                        url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+            font-weight: bold;
+        }
+
+        /* --- MENÜ HAREKETİ BAŞLANGIÇ --- */
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            text-transform: uppercase; 
+            font-size: 14px; 
+            position: relative;
+            padding: 5px 0;
+            transition: all 0.3s ease; /* Yumuşak geçiş */
+            display: inline-block;
+        }
+
+        /* Mause üstüne gelince hafif yukarı kayma ve parlama */
+        nav a:hover {
+            transform: translateY(-3px);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Alt çizgi efekti */
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #3b82f6; /* Sitenin mavi tonu */
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after {
+            width: 100%; /* Mause gelince çizgi uzar */
+        }
+        /* --- MENÜ HAREKETİ BİTİŞ --- */
+
+        .logo-box {
+            background: white;
+            color: #080130;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 2px;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        /* Logo kutusu da mause gelince hafif büyüsün */
+        .logo-box:hover {
+            transform: scale(1.05);
+        }
+
+        .content {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <a href="galeri.html">Galeri</a>
+            <a href="kadromuz.html">Kadromuz</a>
+            <div >
+                <img src="abeyen.png" alt="Aber Logo" style="height: 230px;">
+            </div>
+            <a href="randevu.html">Randevu</a>
+            <a href="fiyatlar.html">Fiyat Listesi</a>
+        </nav>
+
+        <div class="content">
+            <h1>ABER HAIRSTUDIOS</h1>
+            <p class="subtitle">Profesyonel hizmet ve stil burada buluşuyor.<br>Sıradan bir kesim değil, bir tasarım deneyimi.</p>
+        </div>
+    </div>
+
+</body>
+</html>
