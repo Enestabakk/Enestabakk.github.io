@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Aber Hairstudios</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#bfa05b',
+                        dark: '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-dark text-white py-4 shadow-md">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold uppercase tracking-widest hover:text-gold transition duration-300">
+                Aber Hairstudios
+            </a>
+            
+            <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
+                <li><a href="index.html" class="hover:text-gold transition">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html" class="text-gold border-b-2 border-gold pb-1">Hakkımızda</a></li>
+                <li><a href="galeri.html" class="hover:text-gold transition">Galeri</a></li>
+                <li><a href="iletisim.html" class="hover:text-gold transition">İletişim</a></li>
+            </ul>
+
+            <button class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="relative h-80 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1521590832898-947c0583f72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');">
+        <div class="absolute inset-0 bg-black opacity-60"></div> <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl font-bold mb-2">Hakkımızda</h1>
+            <p class="text-gold uppercase tracking-[0.2em] font-light">Sanat, Tutku ve Kusursuzluk</p>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=800&auto=format&fit=crop" 
+                         alt="Salon İç Mekan" 
+                         class="rounded-lg shadow-2xl w-full object-cover h-[400px]">
+                </div>
+
+                <div class="w-full md:w-1/2 space-y-6">
+                    <div>
+                        <h4 class="text-gold uppercase text-sm font-bold tracking-wider mb-2">Hikayemiz</h4>
+                        <h2 class="text-4xl font-bold text-gray-900 leading-tight">Aber Hairstudios'a <br>Hoş Geldiniz</h2>
+                    </div>
+                    
+                    <p class="text-gray-600 leading-relaxed">
+                        Aber Hairstudios olarak, saç tasarımının sadece bir kesim işlemi değil, kişiliğinizi yansıtan bir sanat olduğuna inanıyoruz. Yola çıktığımız ilk günden beri, her müşterimizin salondan gülümseyerek ayrılması en büyük motivasyonumuz.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Modern teknikleri, kaliteli ürünleri ve konforlu atmosferi bir araya getiriyoruz. Uzman ekibimizle sadece saçınıza değil, ruhunuza da dokunuyoruz.
+                    </p>
+
+                    <div class="flex gap-12 pt-4 border-t border-gray-200">
+                        <div>
+                            <span class="block text-4xl font-bold text-gold">10+</span>
+                            <span class="text-sm text-gray-500 uppercase">Yıllık Tecrübe</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-bold text-gold">5000+</span>
+                            <span class="text-sm text-gray-500 uppercase">Mutlu Müşteri</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Uzman Ekibimiz</h2>
+                <div class="w-20 h-1 bg-gold mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Sizlere en iyi hizmeti sunmak için sürekli eğitim alan ve trendleri takip eden profesyonel kadromuz.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=400&auto=format&fit=crop" 
+                             alt="Ahmet Yılmaz" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Ahmet Yılmaz</h3>
+                        <p class="text-gold text-sm font-semibold uppercase mt-1">Baş Stilist</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=400&auto=format&fit=crop" 
+                             alt="Ayşe Demir" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Ayşe Demir</h3>
+                        <p class="text-gold text-sm font-semibold uppercase mt-1">Renk Uzmanı</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop" 
+                             alt="Mehmet Öztürk" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Mehmet Öztürk</h3>
+                        <p class="text-gold text-sm font-semibold uppercase mt-1">Kesim Uzmanı</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-gray-400 py-8 text-center border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Aber Hairstudios. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
